@@ -1,0 +1,39 @@
+!!python/object/new:dynamic_reconfigure.encoding.Config
+dictitems:
+  H_max_L: 32
+  H_max_R: 28
+  H_min_L: 1
+  H_min_R: 0
+  S_max_L: 255
+  S_max_R: 193
+  S_min_L: 89
+  S_min_R: 79
+  V_max_L: 210
+  V_max_R: 255
+  V_min_L: 126
+  V_min_R: 63
+  groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+    dictitems:
+      H_max_L: 32
+      H_max_R: 28
+      H_min_L: 1
+      H_min_R: 0
+      S_max_L: 255
+      S_max_R: 193
+      S_min_L: 89
+      S_min_R: 79
+      V_max_L: 210
+      V_max_R: 255
+      V_min_L: 126
+      V_min_R: 63
+      groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      id: 0
+      name: Default
+      parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      parent: 0
+      state: true
+      type: ''
+    state: []
+state: []
