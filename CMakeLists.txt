@@ -90,6 +90,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate dynamic reconfigure parameters in the 'cfg' folder
 generate_dynamic_reconfigure_options(
   cfg/Tutorials.cfg
+  cfg/ImageProc.cfg
 #   cfg/DynReconf2.cfg
 )
 
@@ -134,6 +135,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(dynamic_HSV_server src/dynamic_HSV_server.cpp)
+add_executable(dynamic_bool src/dynamic_bool.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -147,6 +149,7 @@ add_executable(dynamic_HSV_server src/dynamic_HSV_server.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(dynamic_HSV_server ${catkin_LIBRARIES})
+target_link_libraries(dynamic_bool ${catkin_LIBRARIES})
 
 #############
 ## Install ##
